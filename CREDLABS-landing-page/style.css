@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Raleway;
+    color:rgb(48, 42, 42);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 200px;
+    width: 100%;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: grid;
+}
+
+#header-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+#header-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
