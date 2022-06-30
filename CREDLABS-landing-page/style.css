@@ -72,7 +72,6 @@
     
 }
 
-
 #header-body{
     display: flex;
     justify-content: center;
@@ -82,3 +81,47 @@
     box-sizing: border-box;
     text-align: center;
 }
+
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+}
+
+#space{
+  width: 100px;
+}
+
+#creatorButton{
+  background-color: #3969d3;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+#creatorButton:hover {
+  background-color:rgba(3, 55, 114, 0.541);
+}
+
+#expertButton{
+  background-color: #3969d3;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+#expertButton:hover {
+  background-color:rgba(3, 55, 114, 0.541);
+}
+
