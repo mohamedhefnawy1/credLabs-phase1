@@ -14,5 +14,5 @@ const expertButton = document.getElementById("expertButton");        // create a
             console.log("The button was clicked");                             
             // const name = prompt("Enter name: ");
             // console.log(name);
-            location.href = "http://127.0.0.1:5500/CREDLABS-creators-page/index.html";  // need the link for the expert page
+            location.href = "http://127.0.0.1:5500/CREDLABS-experts-page/index.html";  // need the link for the expert page
         });
