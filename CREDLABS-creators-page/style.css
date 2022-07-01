@@ -28,13 +28,16 @@
     height: 100vh;
     grid-column-start: 1;
     grid-column-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #header_title{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: xx-large;
+    font-size: 45px;
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
