@@ -5,27 +5,27 @@
     box-sizing: border-box;
     font-family: 'Poppins', Raleway;
     color:rgb(255, 255, 255);
+    overflow-y: hidden;
 }
 
 .container{
-    width: 100vw;
-    height: 100vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 3px;
     padding: 10px;
     box-sizing: border-box;
-    background-image: url(../img/bkg-img2.jpg);
+    background-image: url(../img/workfromhome.jpg);
     background-size: cover;
     background-blend-mode: multiply;
-    background-color:rgba(0, 0, 0, .6);
+    background-color:rgba(0, 0, 0, .7);
     display: grid;
-    grid-template-columns: 60vw 1fr;
+    grid-template-rows: 250px 1fr;
+    
 }
 
 .header{
-    height: 100vh;
+    height: 1fr;
     grid-column-start: 1;
     grid-column-end: 2;
     display: flex;
@@ -48,4 +48,13 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
+}
+
+.formHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    height: 1fr;
 }

@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', Raleway;
     color:rgb(255, 255, 255);
+    overflow-y: hidden;
 }
 
 .container{
@@ -16,10 +17,14 @@
     gap: 3px;
     padding: 10px;
     box-sizing: border-box;
-    background-image: url(../img/bkg-img2.jpg);
+    /* background-image: url(../img/Overhead-shot-of-woman-working-on-laptop-at-home.jpg); */
+    background-image: url(../img/workfromhome.jpg);
     background-size: cover;
     background-blend-mode: multiply;
-    background-color:rgba(0, 0, 0, .6);
+    background-color:rgba(0, 0, 0, .7);
+    display: grid;
+    grid-template-columns: 800px 1fr;
+    grid-template-rows: 100px 0.5fr 0.5fr
 }
 
 /* Add a black background color to the top navigation */
@@ -52,17 +57,20 @@
 
 
 .header{
+    grid-row-start: 2;
     grid-column-start: 1;
-    grid-column-end: 4;
-    height: 200px;
-    width: 100%;
+    width: 1fr;
+    height: 300px;
     font-size: 50px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-#header-title{
+#title{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,17 +84,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: small;
+    font-size: x-large;
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
+    grid-row-start: 1;
+    grid-column-start: 2;
 }
 
-.body{
+#buttons{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25%;
+  height: 30%;
+  grid-row-start: 1;
 }
 
 #space{
@@ -101,8 +112,10 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   border-radius: 6px;
+  width: 250px;
+  height: 60px;
 }
 
 #creatorButton:hover {
@@ -117,8 +130,10 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   border-radius: 6px;
+  width: 250px;
+  height: 60px;
 }
 
 #expertButton:hover {
