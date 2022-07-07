@@ -5,6 +5,7 @@ const creatorButton = document.getElementById("creatorButton");        // create
             // const name = prompt("Enter name: ");
             // console.log(name);
             location.href = "http://127.0.0.1:5500/CREDLABS-creators-page/index.html";
+            
 
         });
 

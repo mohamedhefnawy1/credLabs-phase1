@@ -10,6 +10,28 @@
 </head>
 <body>
     <div class="container">
+
+        <form action = "datastored.html" method = "GET">    <!-- action is for where the data gets sent-->
+            <div>
+                <label for = "name">First name</label>
+                <input type = "text" name="First Name" id="First Name" placeholder="First Name" required>
+            </div>    
+            <div>
+                <label for = "name">Last name</label>
+                <input type = "text" name="Last Name" id="Last Name" placeholder="Last Name" required>
+            </div>
+            <div>
+                <label for = "email">Email</label>
+                <input type = "email" name="Email" id="Email" placeholder="Email" required>
+            </div>
+            <div>
+                <label>Password</label>
+                <input type = "password" name = "Password" placeholder="Password" required>
+            </div>
+            <button type = "submit">Create my account</button>
+        </form>
+
+
         <div class="header">
             <div class="subHeader">
                 <div id="header_title">Selling your expertise was never as easy</div>
