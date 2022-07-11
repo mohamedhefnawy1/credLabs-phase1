@@ -21,7 +21,7 @@
     background-image: url(../img/workfromhome.jpg);
     background-size: cover;
     background-blend-mode: multiply;
-    background-color:rgba(0, 0, 0, .7);
+    background-color:rgba(0, 0, 0, .6);
     display: grid;
     grid-template-columns: 800px 1fr;
     grid-template-rows: 100px 0.5fr 0.5fr
@@ -72,10 +72,10 @@
 
 #title{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     font-size: xx-large;
-    padding: 10px;
+    padding: 100px;
     box-sizing: border-box;
     
 }
@@ -97,7 +97,7 @@
   justify-content: center;
   align-items: center;
   height: 30%;
-  grid-row-start: 1;
+  padding: 30px;
 }
 
 #space{
@@ -140,3 +140,18 @@
   background-color:rgba(3, 55, 114, 0.541);
 }
 
+#mainHolder{
+  height: 300px;
+  grid-row-start: 3;
+  grid-column-start: 1;
+}
+
+#infoText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  padding: 50px;
+  box-sizing: border-box;
+  text-align: center;
+}
