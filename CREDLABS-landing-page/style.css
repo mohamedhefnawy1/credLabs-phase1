@@ -197,7 +197,7 @@
     background-blend-mode: multiply;
     background-color:rgba(0, 0, 0, .7);
     display: grid;
-    grid-template-columns: 800px 1fr;
+    grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 100px 0.5fr 0.5fr
 }
 
@@ -235,6 +235,13 @@
   text-align: left;
   position: relative;
   left: 30px;
+}
+
+#infoHolder
+{
+  overflow: hidden;
+  width: 500px;
+
 }
 
 /* #imgHolder{
