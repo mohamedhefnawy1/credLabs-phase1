@@ -5,7 +5,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', Raleway;
     color:rgb(255, 255, 255);
-    overflow-y: auto;
+    background-image: url(../img/workfromhome2.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color:rgba(0, 0, 0, .7);
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .container{
@@ -15,39 +20,27 @@
     gap: 3px;
     padding: 10px;
     box-sizing: border-box;
-    background-image: url(../img/workfromhome2.jpg);
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-color:rgba(0, 0, 0, .6);
     display: grid;
-    grid-template-rows: 250px 1fr;
+    grid-template-rows: 100px 1fr;
     
 }
 
-.header{
-    height: 1fr;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.standalone-project-main vcentered center-center{
+    position:relative;
+    top: 100px;
 }
 
-#header_title{
+#title{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    font-size: 45px;
+    font-size: xx-large;
     padding: 10px;
     box-sizing: border-box;
-    text-align: center;
-}
-
-#header_description{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+    position:relative;
+    left: 100px;
+    width: 205px;
+    text-decoration: none;
 }
 
 .formHolder{
@@ -56,5 +49,10 @@
     align-items: center;
     /* padding: 10px; */
     box-sizing: border-box;
-    height: 1fr;
+    height: 100vh;
+}
+.involveme_embed{
+    width: 100vw;
+    position:relative;
+    top: 350px;
 }
