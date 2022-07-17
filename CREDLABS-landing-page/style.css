@@ -4,29 +4,29 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', Raleway;
-    color:rgb(255, 255, 255);
+    /* color:rgb(255, 255, 255); */
     overflow-y:auto;
 }
 
 .container{
   width: 100vw;
   height: 100vh;
-  display: grid;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
+  display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 0.5fr 0.5fr;
+  grid-template-rows:150px 1fr;
 
   gap: 3px;
   padding: 10px;
   box-sizing: border-box;
 
-  background-image: url(../img/workfromhome2.jpg);
+  /* background-image: url(../img/workfromhome2.jpg);
   background-size: cover;
   background-blend-mode: multiply;
-  background-color:rgba(0, 0, 0, .7);
+  background-color:rgba(0, 0, 0, .5); */
 
   }
 
@@ -73,14 +73,49 @@
     
 }
 
+.wrapperDiv{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border-bottom: 2px #000000 solid; */
+}
+
+.navbar{
+  overflow: hidden;
+}
+
 #title{
     display: flex;
     /* justify-content: center; */
     align-items: center;
-    font-size: xx-large;
-    padding: 100px;
+    font-size: 2vw;
+    padding: 30px;
     box-sizing: border-box;
     text-decoration: none;
+    color: #d3d3d3;;
+}
+#creatorLink{
+  padding: 20px;
+  text-decoration: none;
+  font-family: 'Poppins', Raleway;
+  color:#d3d3d3;
+  font-size: 1vw;
+}
+
+#expertLink{
+  /* position: relative;
+  float: right; */
+  padding: 20px;
+  text-decoration: none;
+  font-family: 'Poppins', Raleway;
+  font-size: 1vw;
+  color:#d3d3d3;;
 }
 
 #header-body{
@@ -95,10 +130,10 @@
 
 #buttons{
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   height: 30%;
-  padding: 30px;
+  padding: 150px;
   overflow: hidden;
   grid-row-start: 3;
 }
@@ -146,17 +181,20 @@
 }
 
 #mainHolder{
-  height: 400px;
-  grid-row-start: 3;
+  /* height: 400px; */
+  grid-row-start: 2;
   grid-column-start: 1;
   overflow-y: hidden;
-  display:grid;
-  grid-template-rows: 240px 1fr;
-  position: relative;
-  top: 50px;
 }
 
-#infoHead{
+#infoHolder
+{
+  overflow: hidden;
+  width: 500px;
+
+}
+
+/* #infoHead{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,11 +204,53 @@
   box-sizing: border-box;
   text-align: center;
   overflow-y: hidden;
+  
+} */
+
+#infoHead{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left;
+  position: relative;
+  left: 30px;
+  color: #d3d3d3;;
 }
 
-/* #imgHolder{
-  visibility:hidden;
-} */
+#infoBody{
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: large;
+  box-sizing: border-box;
+  text-align: left;
+  position: relative;
+  left: 30px;
+  color: #d3d3d3;
+}
+
+
+.videoHolder{
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+}
+
+.video1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -100;
+  filter: brightness(50%);
+}
+
 
 @media only screen and (min-width: 1400px) {
   *{
@@ -178,7 +258,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', Raleway;
-    color:rgb(255, 255, 255);
+    /* color:rgb(255, 255, 255); */
     overflow-y: hidden;
 }
 
@@ -191,14 +271,31 @@
     gap: 3px;
     padding: 10px;
     box-sizing: border-box;
-    /* background-image: url(../img/Overhead-shot-of-woman-working-on-laptop-at-home.jpg); */
-    background-image: url(../img/workfromhome2.jpg);
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-color:rgba(0, 0, 0, .7);
-    display: grid;
+    /* display: grid;
     grid-template-columns: 0.5fr 0.5fr;
-    grid-template-rows: 100px 0.5fr 0.5fr
+    grid-template-rows: 100px 0.6fr; */
+}
+
+.wrapperDiv{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#title{
+  font-size: xx-large;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #d3d3d3;
+  padding: 10px;
+  width: fit-content;
+
 }
 
 #header-body{
@@ -213,28 +310,35 @@
   grid-column-start: 2;
 }
 
+#mainHolder{
+  /* height: 400px; */
+  grid-row-start: 2;
+  grid-column-start: 1;
+  overflow-y: hidden;
+  padding: 40px 100px
+}
+
+
 #infoHead{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: xx-large;
+  font-size: 2.5vw;
   font-weight: bolder;
-  padding: 10px;
   box-sizing: border-box;
   text-align: left;
   position: relative;
-  left: 30px;
+  color: #d3d3d3;
 }
 
 #infoBody{
   justify-content: center;
   align-items: center;
-  padding: 10px;
   font-size: large;
   box-sizing: border-box;
   text-align: left;
   position: relative;
-  left: 30px;
+  color: #d3d3d3;
 }
 
 #infoHolder
@@ -244,16 +348,29 @@
 
 }
 
-/* #imgHolder{
-  grid-column-start: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* .videoHolder{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+} */
+
+.videoHolder{
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
-#certifiedImg{
-  margin-left: 12cm;
-  display: block;
-} */
+.video1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+
+}
 
 }
