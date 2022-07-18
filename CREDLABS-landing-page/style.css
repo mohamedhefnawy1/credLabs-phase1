@@ -42,7 +42,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  /* padding: 40px 100px; */
   z-index: 10;
   display: flex;
   align-items: center;
@@ -56,9 +56,9 @@
 #title{
     display: flex;
     align-items: center;
-    font-size: 2vw;
+    font-size: xx-large;
     font-weight: 500;
-    padding: 30px;
+    padding: 50px;
     box-sizing: border-box;
     text-decoration: none;
     color: #d3d3d3;;
@@ -68,14 +68,14 @@
   text-decoration: none;
   font-family: 'Poppins', Raleway;
   color:#d3d3d3;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 #expertLink{
   padding: 20px;
   text-decoration: none;
   font-family: 'Poppins', Raleway;
-  font-size: 1vw;
+  font-size: 1.5vw;
   color:#d3d3d3;;
 }
 
@@ -93,7 +93,7 @@
   display: flex;
   align-items: center;
   height: 30%;
-  padding: 200px 100px;
+  padding: 50px 25px;
   overflow: hidden;
   grid-row-start: 3;
 }
@@ -113,6 +113,7 @@
   font-size: 14px;
   border-radius: 6px;
   width: 250px;
+  min-width: 150px;
   height: 60px;
   overflow: hidden;
 }
@@ -132,6 +133,7 @@
   font-size: 15px;
   border-radius: 6px;
   width: 250px;
+  min-width: 150px;
   height: 60px;
   overflow: hidden;
 }
@@ -149,7 +151,7 @@
 #infoHolder
 {
   overflow: hidden;
-  width: 500px;
+  width: auto;
 
 }
 
@@ -163,7 +165,7 @@
   box-sizing: border-box;
   text-align: left;
   position: relative;
-  left: 30px;
+  /* left: 30px; */
   color: #d3d3d3;;
 }
 
@@ -175,7 +177,7 @@
   box-sizing: border-box;
   text-align: left;
   position: relative;
-  left: 30px;
+  /* left: 30px; */
   color: #d3d3d3;
 }
 
@@ -198,7 +200,7 @@
 }
 
 
-@media only screen and (min-width: 1400px) {
+@media screen and (min-width: 966px) {
   *{
     margin: 0;
     padding: 0;
@@ -239,6 +241,14 @@
   width: fit-content;
 
 }
+
+#creatorLink{
+  font-size: 1vw;
+}
+#expertLink{
+  font-size: 1vw;
+}
+
 
 #header-body{
   display: flex;
@@ -288,6 +298,10 @@
   width: 500px;
 }
 
+#buttons{
+  padding: 100px 50px;
+}
+
 .videoHolder{
   width: 100%;
   height: 100%;
@@ -304,4 +318,53 @@
 
 }
 
+#space{
+  min-width: 100px;
 }
+
+}
+
+@media screen and (max-width: 530px) {
+
+  .container{
+    grid-template-rows: 100px 200px 250px 1fr;
+  }
+
+  #title{
+    font-size: x-large;
+    padding: 20px;
+  }
+
+  #buttons{
+    grid-row-start: 4;
+    padding: 0px;
+  }
+  
+  #mainHolder{
+    grid-row-start: 3;
+  }
+
+}
+
+@media screen and (max-width: 460px) {
+  
+  .container{
+    grid-template-rows: 100px 200px 250px 1fr;
+  }
+
+  .navbar{
+    visibility: hidden;
+  }
+
+  #title{
+    white-space:nowrap;
+    overflow: hidden;
+  }
+
+}
+
+/* @media screen and (max-height: 785px) {
+  #buttons{
+    grid-row-start: 2;
+  }
+} */
