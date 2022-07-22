@@ -102,7 +102,7 @@
   width: 100px;
 }
 
-#creatorButton{
+#getStartedButton{
   background-color: rgb(0, 0, 165);
   border: none;
   color: white;
@@ -112,36 +112,16 @@
   display: inline-block;
   font-size: 14px;
   border-radius: 6px;
-  width: 250px;
+  width: 220px;
   min-width: 150px;
   height: 60px;
   overflow: hidden;
 }
 
-#creatorButton:hover {
+#getStartedButton:hover {
   background-color: rgba(0, 0, 165, 0.514);
 }
 
-#expertButton{
-  background-color: rgb(0, 0, 165);
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  border-radius: 6px;
-  width: 250px;
-  min-width: 150px;
-  height: 60px;
-  overflow: hidden;
-}
-
-#expertButton:hover {
-  background-color: rgba(0, 0, 165, 0.514);
-
-}
 
 /* #mainHolder{
   grid-row-start: 2;
