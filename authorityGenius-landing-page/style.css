@@ -307,7 +307,7 @@
   box-sizing: border-box;
   display:grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 130px 600px 150px 650px 600px 600px;
+  grid-template-rows: 130px 600px 150px 650px 100px 600px;
   overflow: auto;
 }
 
@@ -321,7 +321,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #401cdf;
+  background-color: #3116ac;
 }
 
 #title{
@@ -442,14 +442,15 @@
   grid-row-start: 4;
   width: 100%;
   height: 100%;
-  padding: 0px 250px;
+  padding: 50px 250px;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 0.5fr 0.5fr;
 }
 
 #h2-infoHolder{
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow:hidden;
   width: 100%;
   display: inline-block;
   border-right: 2px solid #d3d3d3;
@@ -486,7 +487,8 @@
 }
 
 #h3-infoHolder{
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow:hidden;
   width: 100%;
   padding: 20px;
 }
@@ -502,15 +504,28 @@ ol{
   padding: 20px 50px;
 }
 
+.carousel-txt{
+  font-size: x-large;
+  font-weight: bolder;
+  color: #000000;
+  grid-row-start: 5;
+  /* padding: 0px 300px; */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 150px;
+  /* border-bottom:2px solid #555555; */
+}
 .carousel-container{
   width: 50%;
   margin: auto;
-  grid-row-start: 5;
+  grid-row-start: 6;
   border-radius: 25px;
-  /* border: 5px solid black; */
+  border: 5px solid black;
   overflow: hidden;
   position: relative;
   top: 100px;
+  /* right: 100px; */
 }
 
 .carousel-slide{
