@@ -307,7 +307,7 @@
   box-sizing: border-box;
   display:grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 130px 600px 150px 650px 100px 600px;
+  grid-template-rows: 130px 600px 150px 650px 100px 600px 300px;
   overflow: auto;
 }
 
@@ -518,6 +518,7 @@ ol{
 }
 .carousel-container{
   width: 50%;
+  max-width: 900px;
   margin: auto;
   grid-row-start: 6;
   border-radius: 25px;
