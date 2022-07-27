@@ -15,11 +15,12 @@
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows:150px 1fr;
+  grid-template-rows:100px 1000px;
 
   gap: 3px;
-  padding: 10px;
+  /* padding: 10px; */
   box-sizing: border-box;
+  overflow-x: hidden;
   }
 
 .header{
@@ -51,6 +52,7 @@
 
 .navbar{
   overflow: hidden;
+  padding: 20px;
 }
 
 #navButton{
@@ -80,7 +82,7 @@
     align-items: center;
     font-size: xx-large;
     font-weight: 500;
-    padding: 50px;
+    padding: 30px;
     box-sizing: border-box;
     text-decoration: none;
     color: #ffffff;
@@ -92,7 +94,7 @@
   text-decoration: none;
   font-family: 'Poppins', Raleway;
   color: #ffffff;
-  font-size: 1.5vw;
+  font-size: 1vw;
 }
 
 #aboutUs{
@@ -100,15 +102,92 @@
   text-decoration: none;
   font-family: 'Poppins', Raleway;
   color: #ffffff;
-  font-size: 1.5vw;
+  font-size: 1vw;
 }
 
 #mainHolder{
     grid-row-start: 2;
     height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    padding: 85px 150px;
+    /* padding-top: 0px; */
+  }
+
+.mainTitle{
+  font-size: 3vw;
+  font-weight: bold;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.mainBody{
+  font-size: x-large;
+  max-width: 500px;
+  z-index: 10;
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textHolder{
+    grid-row-start: 2;
+    display: grid;
+    grid-template-rows: 2;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px;
+    position: relative;
+    top: 50px;
+    z-index: 10;
 }
 
 .form{
     width: 100%;
     height: 100%;
+    z-index: 0;
+    /* position: relative;
+    bottom: 100px; */
+}
+
+.formImgHolder{
+  background-image: url(../img/pexels-martin-péchy-2078271.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer{
+  grid-row-start: 6;
+  height: 100px;
+  width: 100vw;
+  background-color: rgba(207, 207, 207, 0.295);
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footerAboutUs{
+  color:rgb(0, 0, 0);
+  font-size: large;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#footerExpertDatabase{
+  color:rgb(0, 0, 0);
+  font-size: large;
+  padding: 10px;
+  text-decoration: none;
 }
