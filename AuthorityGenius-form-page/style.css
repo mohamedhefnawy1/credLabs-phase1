@@ -111,8 +111,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
-    padding: 85px 150px;
-    /* padding-top: 0px; */
+    /* padding: 0px 150px; */
   }
 
 .mainTitle{

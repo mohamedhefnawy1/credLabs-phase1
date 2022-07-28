@@ -5,7 +5,7 @@ const creatorButton = document.getElementById("getStartedButton");        // cre
             // const name = prompt("Enter name: ");
             // console.log(name);
             // location.href = "http://127.0.0.1:5500/CREDLABS-creators-page/index.html";
-            location.href = "http://127.0.0.1:5500/AuthorityGenius-form-page/index.html";
+            location.href = "https://effulgent-croquembouche-26c9f4.netlify.app/";
             
 
         });
@@ -17,7 +17,7 @@ const navButton = document.getElementById("navButton");        // create a const
             // const name = prompt("Enter name: ");
             // console.log(name);
             // location.href = "http://127.0.0.1:5500/CREDLABS-experts-page/index.html";  // need the link for the expert page
-            location.href = "http://127.0.0.1:5500/AuthorityGenius-form-page/index.html";
+            location.href = "https://effulgent-croquembouche-26c9f4.netlify.app/";
         });
 
 

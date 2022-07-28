@@ -174,11 +174,6 @@
   right: 100px; */
 }
 
-#infoHolder
-{
-
-}
-
 #infoHead{
   display: flex;
   justify-content: center;
@@ -219,12 +214,50 @@
   color: #000000;
 }
 
-#h2-infoHead{
+.infoHeadHolder{
+  display: flex;
+}
+
+#dynamic-text{
+  list-style: none;
+  color: #616161;
+  font-size: x-large;
+  font-weight: bold;
+  /* margin-left: 15px; */
+}
+
+.dynamic-text li{
+  position: relative;
+}
+
+.dynamic-text li::after{
+  content:"";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid #616161;
+  animation: typing 3s steps(18) infinite;
+}
+
+#h2-infoHead1{
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: x-large;
-  font-weight: bolder;
+  font-weight: bold;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: left;
+  color: #616161;
+}
+
+#h2-infoHead2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-weight: bold;
   padding: 40px;
   box-sizing: border-box;
   text-align: left;
@@ -498,13 +531,50 @@ img{
   padding: 20px;
 }
 
-#h2-infoHead{
+.infoHeadHolder{
+  display: flex;
+}
+
+#dynamic-text{
+  list-style: none;
+  color: #616161;
+  font-size: x-large;
+  font-weight: bold;
+  /* margin-left: 15px; */
+}
+
+.dynamic-text li{
+  position: relative;
+}
+
+.dynamic-text li::after{
+  content:"";
+  position: absolute;
+  left: 0;
+  height: 100%;
   width: 100%;
+  border-left: 2px solid #616161;
+  animation: typing 3s steps(18) infinite;
+}
+
+#h2-infoHead1{
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: x-large;
-  font-weight: bolder;
+  font-weight: bold;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: left;
+  color: #616161;
+}
+
+#h2-infoHead2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-weight: bold;
   padding: 40px;
   box-sizing: border-box;
   text-align: left;
