@@ -14,7 +14,7 @@
   flex-direction: column;
 
   display: grid;
-  grid-template-rows:110px 500px 1600px 1fr;
+  grid-template-rows:100px 500px 1200px 600px;
 
   gap: 3px;
   /* padding: 10px; */
@@ -22,20 +22,6 @@
 
 
   }
-
-/* .header{
-    grid-row-start: 2;
-    grid-column-start: 1;
-    width: 1fr;
-    height: 300px;
-    font-size: 50px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-} */
 
 .wrapperDiv{
   position: absolute;
@@ -52,13 +38,12 @@
 
 .navbar{
   overflow: hidden;
-  padding:10px;
+  padding:20px;
   max-width: 100%;
 }
 
 #navButton{
   background-color:rgb(0, 0, 0);
-  border: 2px solid black;
   /* border: none; */
   color: rgb(255, 255, 255);
   padding: 15px 32px;
@@ -81,8 +66,8 @@
 #title{
   display: flex;
   align-items: center;
-  font-size: x-large;
-  font-weight: bold;
+  font-size: xx-large;
+  font-weight: 300;
   padding: 20px;
   box-sizing: border-box;
   text-decoration: none;
@@ -124,8 +109,8 @@
 #buttons{
   display: flex;
   align-items: center;
-  height: 30%;
-  padding: 20px 25px;
+  height: auto;
+  padding: 20px 10px;
   overflow: hidden;
   grid-row-start: 3;
 }
@@ -161,9 +146,21 @@
   grid-row-start: 2;
   height: 100%;
   width: 100%;
-  padding: 40px;
+  display: flex;
+  align-items: center;
+  padding: 30px 0px;
 }
 
+#infoHolder
+{
+  overflow: hidden;
+  width: 70%;
+  display: inline-block;
+  position: relative;
+  /* top: 80px; */
+  /* left: 80px; */
+  padding-left: 80px;
+}
 
 #infoHead{
   display: flex;
@@ -171,7 +168,7 @@
   align-items: center;
   font-size: 40px;
   font-weight: bolder;
-  padding: 10px;
+  padding: 30px 10px;
   box-sizing: border-box;
   text-align: left;
   color: #000000;
@@ -188,6 +185,7 @@
   display: grid;
   grid-template-rows: 0.5fr 0.5fr;
 }
+
 
 
 #h2-title{
@@ -215,6 +213,21 @@
   color: #616161;
 }
 
+.infoHeadHolder{
+  display: inline;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 40px;
+  width: 500px;
+}
+
+.line1{
+  display: flex;
+  justify-content: center;
+  /* position: relative;
+  left: 15px; */
+}
+
 #h2-infoHead2{
   display: flex;
   justify-content: center;
@@ -227,6 +240,66 @@
   color: #616161;
 }
 
+#dynamic-text{
+  /* background-color: #000000; */
+  margin-left: 10px;
+  max-height: 29px;
+  overflow: hidden;
+}
+
+#dynamic-text li{
+  list-style: none;
+  color: #19bedb;
+  font-size: x-large;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  animation: slide 24s steps(8) infinite;
+  /* margin-left: 15px; */
+  
+}
+
+#physical{
+  list-style: none;
+  color: #19bedb;
+  font-size: x-large;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  animation: slide2 24s steps(8) infinite;
+  /* margin-left: 15px; */
+  
+}
+
+
+@keyframes slide {
+  100%{
+    /* top: -232px; */
+    top: -223px;
+  }
+}
+
+#dynamic-text li::after{
+  content:"";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  /* border-left: 2px solid #000000; */
+  animation: typing 3s steps(58) infinite;
+}
+
+
+@keyframes typing{
+  40%,
+  60%{
+    left: calc(90% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
 
 #h3-title{
   display: flex;
@@ -251,7 +324,7 @@
   align-items: center;
   font-size: x-large;
   font-weight: bolder;
-  padding: 40px;
+  padding: 20px;
   box-sizing: border-box;
   text-align: center;
   color: #616161;
@@ -273,7 +346,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 20px;
   font-size: large;
   box-sizing: border-box;
   text-align: center;
@@ -296,8 +369,8 @@
 
 #publisherInfo{
     position: relative;
-    top: 72px;
-    left: 50px;
+    top: 50px;
+    /* left: 50px; */
     overflow: hidden;
     height: 350px;
     padding: 20px;
@@ -322,7 +395,7 @@ ol{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 20px;
   font-size: large;
   box-sizing: border-box;
   text-align: center;
@@ -333,7 +406,7 @@ ol{
 .expertInfo{
   position: relative;
   top: 50px;
-  left: 50px;
+  /* left: 50px; */
   overflow: hidden;
   height: 350px;
   padding: 20px;
@@ -348,8 +421,63 @@ ol{
 .slider-div{
   grid-row-start: 4;
   height: 100%;
-  width: 100%
+  width: 100%;
 }
+
+.carousel-txt{
+  font-size: large;
+  font-weight: bold;
+  color: #000000;
+  grid-row-start: 4;
+  /* padding: 20px 300px; */
+  display: flex;
+  justify-content: center;
+  /* border-bottom:2px solid #555555; */
+  position: relative;
+  right: 50px;
+  top: 80px;
+}
+
+.carousel-container{
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  grid-row-start: 4;
+  border-radius: 15px;
+  border: 5px solid black;
+  overflow: hidden;
+  position: relative;
+  top: 100px;
+  /* right: 100px; */
+}
+
+.carousel-slide{
+  display: flex;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  max-width: 800px;
+}
+
+#prevBtn{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 1%;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+#nextBtn{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 1%;
+  font-size: 40px;
+  color: black;
+  cursor: pointer;
+}
+
 
 .footer{
   grid-row-start: 5;
@@ -378,9 +506,10 @@ ol{
   text-decoration: none;
 }
 
-/* img{
-  visibility: hidden;
-} */
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
 
 @media screen and (min-width: 966px) {
 *{
@@ -400,7 +529,7 @@ ol{
   box-sizing: border-box;
   display:grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 130px 600px 800px 600px 100px;
+  grid-template-rows: 100px 700px 800px 600px 100px;
   overflow-x: hidden;
 }
 
@@ -414,7 +543,7 @@ ol{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #3116ac;
+  /* background-color: #f1f1f17a; */
 }
 
 #title{
@@ -425,7 +554,7 @@ ol{
   padding: 30px;
   box-sizing: border-box;
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   position: relative;
   left: 60px;
 }
@@ -435,7 +564,7 @@ ol{
   padding: 20px;
   text-decoration: none;
   font-family: 'Poppins', Raleway;
-  color: #ffffff;
+  color: #000000;
   font-size: 1vw;
 }
 
@@ -444,7 +573,7 @@ ol{
   padding: 20px;
   text-decoration: none;
   font-family: 'Poppins', Raleway;
-  color: #ffffff;
+  color: #000000;
   font-size: 1vw;
 }
 
@@ -467,8 +596,9 @@ ol{
   height: 100%;
   width: 100%;
   overflow-y: hidden;
-  padding: 40px 100px;
-  background-color: #f1f1f17a;
+  padding: 50px 80px;
+  /* background-color: #f1f1f17a; */
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr;
@@ -505,8 +635,8 @@ ol{
   width: 70%;
   display: inline-block;
   position: relative;
-  top: 80px;
-  left: 100px;
+  /* top: 80px; */
+  /* left: 80px; */
 }
 
 #imgHolder{
@@ -793,6 +923,7 @@ img{
   max-height: 100%;
 }
 
+
 .FAQsection{
   grid-row-start: 5;
   display: flex;
@@ -836,7 +967,7 @@ img{
 @media screen and (max-width: 530px) {
 
   .container{
-    grid-template-rows: 100px 200px 250px 1fr;
+    grid-template-rows: 100px 500px 1250px 500px;
   }
 
   #title{
@@ -863,7 +994,7 @@ img{
 @media screen and (max-width: 460px) {
   
   .container{
-    grid-template-rows: 100px 200px 250px 1fr;
+    grid-template-rows: 100px 400px 1300px 400px;
   }
 
   .navbar{
@@ -872,7 +1003,21 @@ img{
 
   #title{
     white-space:nowrap;
-    overflow: hidden;
+    /* overflow: hidden; */
+  }
+
+  #infoHolder{
+    width: 450px;
+    overflow: visible;
+    position: relative;
+    right: 60px;
+  }
+
+  #bodyHolder{
+    padding: 90px 30px;
+  }
+  .carousel-txt{
+    position: relative;
   }
 
 }
