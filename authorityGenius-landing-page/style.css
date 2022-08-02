@@ -637,6 +637,8 @@ img{
   position: relative;
   /* top: 80px; */
   /* left: 80px; */
+  padding-left: 0px;
+
 }
 
 #imgHolder{
@@ -964,7 +966,7 @@ img{
 
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 624px) {
 
   .container{
     grid-template-rows: 100px 500px 1250px 500px;
@@ -975,6 +977,10 @@ img{
     padding: 20px;
   }
 
+  .navbar{
+    visibility: hidden;
+  }
+
   #buttons{
     grid-row-start: 4;
     padding: 0px;
@@ -983,6 +989,14 @@ img{
   #mainHolder{
     grid-row-start: 2;
     padding: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #infoHolder{
+    width: 450px;
+    overflow: visible;
+    padding-left: 0px;
   }
 
   #h2-mainHolder{
@@ -1016,10 +1030,9 @@ img{
   }
 
   #infoHolder{
-    width: 450px;
+    width: auto;
     overflow: visible;
-    position: relative;
-    right: 60px;
+    padding: 40px;
   }
 
   #bodyHolder{
