@@ -564,7 +564,6 @@ img{
   text-decoration: none;
   font-family: 'Poppins', Raleway;
   color: #000000;
-  /* font-size: 1vw; */
 }
 
 #aboutUs{
@@ -573,7 +572,6 @@ img{
   text-decoration: none;
   font-family: 'Poppins', Raleway;
   color: #000000;
-  /* font-size: 1vw; */
 }
 
 
@@ -627,6 +625,11 @@ img{
   position: relative;
   color: #000000;
   width: 500px;
+}
+
+.infoHolderHolder{
+  display: flex;
+  justify-content: center;
 }
 
 #infoHolder
