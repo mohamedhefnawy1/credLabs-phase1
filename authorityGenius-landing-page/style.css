@@ -510,7 +510,7 @@ img{
   max-height: 100%;
 }
 
-@media screen and (min-width: 966px) {
+@media screen and (min-width: 850px) {
 *{
   margin: 0;
   padding: 0;
@@ -564,7 +564,7 @@ img{
   text-decoration: none;
   font-family: 'Poppins', Raleway;
   color: #000000;
-  font-size: 1vw;
+  /* font-size: 1vw; */
 }
 
 #aboutUs{
@@ -573,7 +573,7 @@ img{
   text-decoration: none;
   font-family: 'Poppins', Raleway;
   color: #000000;
-  font-size: 1vw;
+  /* font-size: 1vw; */
 }
 
 
@@ -632,19 +632,20 @@ img{
 #infoHolder
 {
   overflow: hidden;
-  width: 80%;
+  width: 100%;
   display: inline-block;
   position: relative;
   /* top: 80px; */
   /* left: 80px; */
-  padding-left: 0px;
-
+  padding: 0px 20px;
+  max-width: 600px;
 }
 
 #imgHolder{
   background-image: url(busy-project-manager-overwhelmed-by-work.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size:contain;
   height: 500px;
   width:100%;
 }
