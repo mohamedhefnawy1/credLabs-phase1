@@ -822,12 +822,11 @@ img{
 }
 
 
-#dynamic-text{
-  /* background-color: #000000; */
+ #dynamic-text{
   margin-left: 10px;
   max-height: 29px;
   overflow: hidden;
-}
+} */
 
 #dynamic-text li{
   list-style: none;
