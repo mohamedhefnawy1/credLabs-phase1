@@ -444,8 +444,10 @@ ol{
 }
 
 .expertBtnHolder{
+  grid-row-start: 4;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
   bottom: 20px;
 }
@@ -472,7 +474,7 @@ ol{
 }
 
 .slider-div{
-  grid-row-start: 4;
+  grid-row-start: 5;
   height: 100%;
   width: 100%;
 }
@@ -582,7 +584,7 @@ img{
   box-sizing: border-box;
   display:grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 700px 1000px 600px 100px;
+  grid-template-rows: 100px 700px 800px 100px 600px 100px;
   overflow-x: hidden;
 }
 
@@ -938,7 +940,7 @@ ol{
 }
 
 .slider-div{
-  grid-row-start: 4;
+  grid-row-start: 5;
   height: 100%;
   width: 100%
 }

@@ -20,6 +20,16 @@ const navButton = document.getElementById("navButton");        // create a const
             location.href = "https://effulgent-croquembouche-26c9f4.netlify.app/";
         });
 
+const expertButton = document.getElementById("expertButton");        // create a constant in js file that references the button we made above
+        //console.log(creatorButton);                                          // logs the value of the constant "creatorButton" to the console (dev tools)
+        navButton.addEventListener("click", function(e) {                  // this is for what happens when the button we created is clicked 
+        console.log("The button was clicked");                             
+        // const name = prompt("Enter name: ");
+        // console.log(name);
+        // location.href = "http://127.0.0.1:5500/CREDLABS-experts-page/index.html";  // need the link for the expert page
+        location.href = "https://effulgent-croquembouche-26c9f4.netlify.app/";
+    });
+
 
 //variables for image slider
 const carouselSlide = document.querySelector('.carousel-slide');
