@@ -849,6 +849,31 @@ img{
   grid-template-columns: 0.5fr 0.5fr;
 }
 
+.h2-titleHolder{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#h2-img{
+  width: 35px;
+  height: 35px;
+}
+
+#h2-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  color: #000000;
+  z-index: 100;
+}
+
 #h2-infoHolder{
   overflow-x: hidden;
   overflow:hidden;
@@ -980,6 +1005,26 @@ img{
     display: flex;
     /* align-items: center; */
     justify-content: center;
+}
+
+.h3-titleHolder{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#h3-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  color: #000000;
+  z-index: 100;
 }
 
 .expertInfo{
