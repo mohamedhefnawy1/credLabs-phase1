@@ -14,7 +14,7 @@
   flex-direction: column;
 
   display: grid;
-  grid-template-rows:100px 500px 1200px 600px;
+  grid-template-rows:100px 500px auto 100px 600px;
 
   gap: 3px;
   /* padding: 10px; */
@@ -122,6 +122,7 @@
   overflow: hidden;
   grid-row-start: 3;
   justify-content: center;
+  padding-top: 50px;
 }
 
 #space{
@@ -158,7 +159,6 @@
   display: flex;
   align-items: center;
   padding: 30px 0px;
-
 }
 
 #infoHolder
@@ -359,10 +359,18 @@
   max-width:650px;
 }
 
+#h2-infoHolder{
+  width: 100%;
+  display: inline-block;
+  border-bottom: 2px solid #d3d3d3;
+  padding: 20px;
+}
+
 #h3-infoHolder{
   width: 100%;
   padding: 20px;
   padding-top: 150px;
+  /* border-bottom: 2px solid #d3d3d3; */
 }
 
 #infoBody{
@@ -372,7 +380,7 @@
   font-size: large;
   box-sizing: border-box;
   text-align: center;
-  color: #474747;
+  color: #585858;
   max-width: 100%;
 }
 
@@ -493,7 +501,6 @@ ol{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 250px;
 }
 
 #joinButton{
@@ -534,7 +541,7 @@ ol{
   /* border-bottom:2px solid #555555; */
   position: relative;
   /* right: 50px; */
-  top: 50px;
+  top: 90px;
 }
 
 .carousel-container{
@@ -703,7 +710,7 @@ img{
   box-sizing: border-box;
   display:grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 700px 750px 100px auto auto 100px;
+  grid-template-rows: 100px 700px auto 100px auto auto 100px;
   overflow-x: hidden;
 }
 
@@ -817,13 +824,14 @@ img{
   box-sizing: border-box;
   text-align: left;
   position: relative;
-  color: #000000;
+  color: #585858;
   width: 500px;
 }
 
 #buttons{
   display: flex;
   align-items: center;
+  justify-content: left;
   height: auto;
   padding: 20px 10px;
   overflow: hidden;
@@ -928,6 +936,7 @@ img{
   width: 100%;
   display: inline-block;
   border-right: 2px solid #d3d3d3;
+  border-bottom: 2px solid #ffffff;
   padding: 20px;
 }
 
@@ -1094,7 +1103,7 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 
 #joinButton{
