@@ -362,6 +362,7 @@
 #h2-infoHolder{
   width: 100%;
   display: inline-block;
+  height: auto;
   border-bottom: 2px solid #d3d3d3;
   padding: 20px;
 }
@@ -415,17 +416,22 @@
   z-index: 1000;
 }
 
+.publisherInfoHolder{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
 #publisherInfo{
     position: relative;
     top: 50px;
     /* left: 50px; */
     overflow: hidden;
-    height: 350px;
+    height: auto;
     padding: 20px;
     color: #616161;
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 }
 
 p{
@@ -437,6 +443,7 @@ ol{
   max-width: 500px;
   position: relative;
   padding: 20px 50px;
+  padding-bottom: 100px;
 }
 
 .publisherBtnHolder{
@@ -483,17 +490,20 @@ ol{
   width: 70%;
 }
 
+.expertInfoHolder{
+  display: grid;
+  justify-content: center;
+  align-items: baseline;
+}
+
 .expertInfo{
   position: relative;
   top: 50px;
   /* left: 50px; */
   overflow: hidden;
-  height: 350px;
+  height: auto;
   padding: 20px;
   color: #616161;
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
 }
 
 .joinBtnHolder{
@@ -1056,12 +1066,9 @@ img{
 #publisherInfo{
     left: 50px;
     overflow: hidden;
-    height: 350px;
+    height: auto;
     padding: 20px;
     color: #616161;
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
 }
 
 .h3-titleHolder{
@@ -1090,12 +1097,9 @@ img{
   top: 50px;
   left: 50px;
   overflow: hidden;
-  height: 350px;
+  height: auto;
   padding: 20px;
   color: #616161;
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
 }
 
 .joinBtnHolder{
@@ -1143,6 +1147,7 @@ ol{
   max-width: 500px;
   position: relative;
   padding: 20px 50px;
+  padding-bottom: 50px;
 }
 
 .slider-div{
@@ -1269,17 +1274,19 @@ text-align: left;
 word-spacing: 4px;
 line-height: 30px;
 padding: 25px 50px;
+background-color: #00b0cf23;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .faq-page:hover {
-  background-color: #F9F9F9;
+  /* background-color: #F9F9F9; */
+  background-color: #00b0cf7a;
 }
 /* Style the faq-page panel. Note: hidden by default */
 .faq-body {
   /* padding: 0 18px; */
-  background-color: rgba(255, 255, 255, 0.822);
+  /* background-color: rgba(255, 255, 255, 0.822); */
   display: none;
   overflow: hidden;
 }
@@ -1330,7 +1337,7 @@ padding: 25px 50px;
 @media screen and (max-width: 625px) {
 
   .container{
-    grid-template-rows: 100px 500px 1250px 500px;
+    grid-template-rows: 100px 500px auto auto auto;
   }
 
   #title{
@@ -1374,6 +1381,11 @@ padding: 25px 50px;
     padding-bottom: 30px;
   }
 
+  .faq-header{
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+
 }
 
 @media screen and (max-width: 460px) {
@@ -1395,6 +1407,8 @@ padding: 25px 50px;
     width: auto;
     overflow: visible;
     padding: 40px;
+    position: relative;
+    top: 60px;
   }
 
   #bodyHolder{
