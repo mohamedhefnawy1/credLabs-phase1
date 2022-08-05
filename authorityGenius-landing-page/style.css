@@ -1391,7 +1391,7 @@ background-color: #00b0cf23;
 @media screen and (max-width: 460px) {
   
   .container{
-    grid-template-rows: 100px 400px 1300px 400px;
+    grid-template-rows: 100px 400px auto 100px;
   }
 
   .navbar{
@@ -1409,6 +1409,28 @@ background-color: #00b0cf23;
     padding: 40px;
     position: relative;
     top: 60px;
+  }
+
+  #h2-title{
+    font-size: 34px;
+  }
+
+  #h3-title{
+    font-size: 34px;
+  }
+
+  #h2-infoHead1{
+    font-size: 19px;
+    width: 100px;
+  }
+
+  #h2-infoBody{
+    width: 100%;
+  }
+
+  #dynamic-text{
+    position: relative;
+    left: 50px;
   }
 
   #bodyHolder{
