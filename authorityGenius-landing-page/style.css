@@ -1117,7 +1117,8 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 300px;
+    position: relative;
+    top: 100px;
 }
 
 #joinButton{
