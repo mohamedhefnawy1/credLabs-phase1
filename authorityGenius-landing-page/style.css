@@ -260,8 +260,9 @@
 #dynamic-text{
   /* background-color: #000000; */
   margin-left: 10px;
-  max-height: 29px;
+  height: 34.28px;
   overflow: hidden;
+  margin-bottom: -10px;
 }
 
 #dynamic-text li{
@@ -292,7 +293,7 @@
 @keyframes slide {
   100%{
     /* top: -232px; */
-    top: -223px;
+    top: -274px;
   }
 }
 
@@ -994,8 +995,9 @@ img{
 
  #dynamic-text{
   margin-left: 10px;
-  max-height: 29px;
+  height: 34.28px;
   overflow: hidden;
+  margin-bottom: -10px;
 } */
 
 #dynamic-text li{
@@ -1017,7 +1019,7 @@ img{
   font-weight: bold;
   position: relative;
   top: 0;
-  animation: slide2 24s steps(8) infinite;
+  animation: slide 24s steps(8) infinite;
   /* margin-left: 15px; */
   
 }
@@ -1025,8 +1027,8 @@ img{
 
 @keyframes slide {
   100%{
-    /* top: -232px; */
-    top: -223px;
+    /* top: -223px; */
+    top: -274px;
   }
 }
 
