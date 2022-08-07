@@ -75,7 +75,7 @@
   /* position: relative;
   left: 60px; */
 }
-#creatorLink{
+#expertDatabase{
   visibility: hidden;
 }
 
@@ -751,7 +751,7 @@ img{
   left: 60px;
 }
 
-#creatorLink{
+#expertDatabase{
   visibility: visible;
   padding: 20px;
   text-decoration: none;
@@ -759,12 +759,40 @@ img{
   color: #000000;
 }
 
+#expertDatabase:hover{
+  text-decoration: underline;
+  color: var(--clr-primary-dark);
+}
+
+#expertDatabase::before{
+  content: attr(data-tooltip);
+  font-size: 16px;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px rgb(101, 214, 209);
+  top: 50px;
+  left: 115px;
+  clip-path: circle(0rem at center);
+  overflow: hidden;
+  transition: 150ms all ease-in;
+  }
+
+#expertDatabase:hover::before{
+  clip-path: circle(20rem at center);
+  top: 34%
+}
 #aboutUs{
   visibility: visible;
   padding: 20px;
   text-decoration: none;
   font-family: 'Poppins', Raleway;
   color: #000000;
+}
+
+#aboutUs:hover{
+  text-decoration: underline;
 }
 
 #navButton{
@@ -1385,12 +1413,36 @@ background-color: #00b0cf23;
   text-decoration: none;
 }
 
+
 #footerExpertDatabase{
   color:rgb(0, 0, 0);
   font-size: large;
   padding: 10px;
   text-decoration: none;
 }
+
+#footerExpertDatabase:hover{
+  color: var(--clr-primary-dark);
+}
+
+#footerExpertDatabase::before{
+  content: attr(data-tooltip);
+  font-size: 19px;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px rgb(101, 214, 209);
+  top: 50px;
+  left: 100px;
+  clip-path: circle(0rem at center);
+  overflow: hidden;
+  transition: 150ms all ease-in;
+  }
+
+#footerExpertDatabase:hover::before{
+  clip-path: circle(20rem at center);
+  top: 20%;
 
 }
 
