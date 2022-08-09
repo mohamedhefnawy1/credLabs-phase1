@@ -1456,7 +1456,7 @@ background-color: #00b0cf23;
     height: 100%;
   }
   .main_container{
-    grid-template-rows: 100px 800px auto auto auto;
+    grid-template-rows: 100px 800px auto auto 800px auto;
   }
 
   #title{
