@@ -252,6 +252,7 @@
   height: 34.28px;
   overflow: hidden;
   margin-bottom: -10px;
+  min-width: 200px;
 }
 
 #dynamic-text li{
@@ -335,9 +336,9 @@
 }
 
 #h3-infoHead{
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   font-size: x-large;
   font-weight: bolder;
   padding: 40px;
@@ -351,7 +352,7 @@
 
 #h2-infoHolder{
   width: 100%;
-  display: inline-block;
+  display: inline;
   height: auto;
   border-bottom: 2px solid #d3d3d3;
   padding: 20px;
@@ -480,6 +481,74 @@ ol{
   width: 70%;
 }
 
+#dynamic-text2{
+  /* background-color: #000000; */
+  margin-left: 10px;
+  height: 34.28px;
+  overflow: hidden;
+  margin-bottom: -10px;
+  /* min-width: 200px; */
+}
+
+#dynamic-text2 li{
+  width:52px;
+  list-style: none;
+  color: #19bedb;
+  font-size: x-large;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  animation: slide 24s steps(8) infinite;
+}
+
+@keyframes slide {
+  100%{
+    /* top: -223px; */
+    top: -274px;
+  }
+}
+
+#dynamic-text2 li::after{
+  content:"";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  /* border-left: 2px solid #000000; */
+  animation: typing2 3s steps(58) infinite;
+  z-index: 0;
+}
+
+
+@keyframes typing{
+  40%,
+  60%{
+    left: calc(90% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+@keyframes typing2{
+  40%,
+  60%{
+    left: calc(90% + 100px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+.h2-infoHead3{
+  z-index: 1;
+}
+.dynamictxtwrapper{
+  display: flex;
+  justify-content: center;
+}
+
 .expertInfoHolder{
   display: grid;
   justify-content: center;
@@ -602,6 +671,7 @@ ol{
 }
 .faq-container{
   grid-row: 8;
+  width: 100%;
   display: static;
   justify-content: center;
   flex-direction: column;
@@ -664,7 +734,7 @@ line-height: 30px;
 .footer{
   grid-row-start: 6;
   height: 100px;
-  width: 100vw;
+  width: 100%;
   background-color: rgba(207, 207, 207, 0.295);
   /* position: absolute; */
   bottom: 0;
@@ -865,7 +935,7 @@ img{
   text-align: left;
   position: relative;
   color: #585858;
-  width: 500px;
+  max-width: 500px;
 }
 
 #buttons{
@@ -978,14 +1048,6 @@ img{
   border-right: 2px solid #d3d3d3;
   border-bottom: 2px solid #ffffff;
   padding: 20px;
-}
-
-.infoHeadHolder{
-  display: inline;
-  /* justify-content: center;font-size: 20px;
-  align-items: center; */
-  padding: 40px;
-  width: 500px;
 }
 
 .line1{
@@ -1121,6 +1183,76 @@ img{
   text-align: left;
   color: #000000;
   z-index: 100;
+}
+
+
+
+#dynamic-text2{
+  /* background-color: #000000; */
+  margin-left: 10px;
+  height: 34.28px;
+  overflow: hidden;
+  margin-bottom: -10px;
+  /* min-width: 200px; */
+}
+
+#dynamic-text2 li{
+  width:52px;
+  list-style: none;
+  color: #19bedb;
+  font-size: x-large;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  animation: slide 24s steps(8) infinite;
+}
+
+@keyframes slide {
+  100%{
+    /* top: -223px; */
+    top: -274px;
+  }
+}
+
+#dynamic-text2 li::after{
+  content:"";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  /* border-left: 2px solid #000000; */
+  animation: typing2 3s steps(58) infinite;
+  z-index: 0;
+}
+
+
+@keyframes typing{
+  40%,
+  60%{
+    left: calc(90% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+@keyframes typing2{
+  40%,
+  60%{
+    left: calc(90% + 100px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+.h2-infoHead3{
+  z-index: 1;
+}
+.dynamictxtwrapper{
+  display: flex;
+  justify-content: center;
 }
 
 .expertInfo{
@@ -1397,7 +1529,7 @@ background-color: #00b0cf23;
 .footer{
   grid-row-start: 6;
   height: 100px;
-  width: 100vw;
+  width: 100%;
   background-color: rgba(207, 207, 207, 0.295);
   /* position: absolute; */
   bottom: 0;
@@ -1454,6 +1586,9 @@ background-color: #00b0cf23;
 
   .wrapperDiv{
     height: 100%;
+    display: flex;
+    justify-content: space-between; 
+    position: relative;
   }
   .main_container{
     grid-template-rows: 100px 800px auto auto 800px auto;
@@ -1465,7 +1600,26 @@ background-color: #00b0cf23;
   }
 
   .navbar{
-    visibility: hidden;
+    visibility: visible;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 20px;
+    width: auto;
+  }
+
+  #aboutUs{
+    visibility: visible;
+    display: none;
+  }
+
+  #expertDatabase{
+    visibility: visible;
+    display: none;
+  }
+
+  #navButton{
+    visibility: visible;
   }
 
   #buttons{
@@ -1481,7 +1635,7 @@ background-color: #00b0cf23;
   }
 
   #infoHolder{
-    width: 450px;
+    /* width: 450px; */
     overflow: visible;
     padding-left: 0px;
   }
@@ -1496,7 +1650,7 @@ background-color: #00b0cf23;
   }
   
   #infoHolder{
-    max-width: 400px;
+    /* max-width: 400px; */
   }
 
   #infoBody{
@@ -1518,10 +1672,12 @@ background-color: #00b0cf23;
   
   .wrapperDiv{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
   .navbar{
-    display: none;
+    margin: 0%;
   }
 
   #title{
@@ -1531,7 +1687,7 @@ background-color: #00b0cf23;
   }
 
   #infoHolder{
-    width: auto;
+    /* width: auto; */
     overflow: visible;
     padding: 40px;
   }
