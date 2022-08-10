@@ -634,25 +634,6 @@ ol{
   max-width: 800px;
 }
 
-#prevBtn{
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  left: 1%;
-  font-size: 40px;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-}
-#nextBtn{
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  right: 1%;
-  font-size: 40px;
-  color: black;
-  cursor: pointer;
-}
-
 .testemonial{
   visibility: hidden;
 }
@@ -670,7 +651,7 @@ ol{
   padding: 20px 60px;
 }
 .faq-container{
-  grid-row: 8;
+  grid-row: 7;
   width: 100%;
   display: static;
   justify-content: center;
@@ -693,7 +674,7 @@ margin: auto;
   outline: none;
   transition: 0.4s;
   margin: auto;
-  font-size: 20px;
+  font-size: 15px;
 }
 .faq-body{
 margin: auto;
@@ -732,7 +713,7 @@ line-height: 30px;
 
 
 .footer{
-  grid-row-start: 6;
+  grid-row-start: 8;
   height: 100px;
   width: 100%;
   background-color: rgba(207, 207, 207, 0.295);
@@ -784,7 +765,7 @@ img{
   box-sizing: border-box;
   display:grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 700px auto 100px 650px auto 100px;
+  grid-template-rows: 100px 700px auto 100px 850px auto 100px;
   /* overflow-x: hidden; */
 }
 
@@ -1316,6 +1297,7 @@ p{
 
 ol{
   height: auto;
+  width: 100%;
   max-width: 500px;
   position: relative;
   padding: 20px 50px;
@@ -1438,7 +1420,7 @@ ol{
 
 
 .FAQsection{
-  grid-row-start: 5;
+  grid-row-start: 6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1462,7 +1444,7 @@ ol{
   padding: 20px 60px;
 }
 .faq-container{
-  grid-row: 8;
+  grid-row: 6;
   display: static;
   justify-content: center;
   flex-direction: column;
@@ -1485,6 +1467,7 @@ margin: auto;
   outline: none;
   transition: 0.4s;
   margin: auto;
+  font-size: 20px;
 }
 
 .faq-body{
@@ -1527,7 +1510,7 @@ background-color: #00b0cf23;
 }
 
 .footer{
-  grid-row-start: 6;
+  grid-row-start: 7;
   height: 100px;
   width: 100%;
   background-color: rgba(207, 207, 207, 0.295);
@@ -1657,6 +1640,14 @@ background-color: #00b0cf23;
     padding: 30px 0px;
   }
 
+  .faq-page{
+    font-size: 13px;
+  }
+
+  p{
+    font-size: 12px;
+  }
+
   .faq-header{
     padding-top: 100px;
     padding-bottom: 20px;
@@ -1713,7 +1704,6 @@ background-color: #00b0cf23;
 
   #h2-infoHead1{
     font-size: 24px;
-    width: 200px;
   }
 
   #h2-infoBody{
