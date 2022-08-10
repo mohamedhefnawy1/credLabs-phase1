@@ -51,6 +51,14 @@
   /* background-color: #f1f1f17a; */
 }
 
+.hamburgerHolder{
+  display:none;
+}
+
+.mobile-nav{
+  display:none;
+}
+
 #title{
   display: flex;
   align-items: center;
@@ -234,6 +242,7 @@
 
   .mainTitle{
     font-size: 25px;
+    text-align: center;
   }
 
   .mainBodyHolder{
@@ -260,7 +269,7 @@
 
   .hamburgerHolder{
     padding: 30px;
-    
+    display:inline;
   }
 
 
