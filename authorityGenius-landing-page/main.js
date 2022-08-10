@@ -15,3 +15,30 @@ for (i = 0; i < faq.length; i++) {
         }
     });
 }
+
+
+const menuBtn = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector('.mobile-nav');
+
+menuBtn.addEventListener('click', function() {
+    menuBtn.classList.toggle('is-active')
+    mobileMenu.classList.toggle('is-active')
+});
+
+//animation for burger button
+
+// const menuBtn = document.querySelector('.menu-btn');
+// const mobileMenu = document.querySelector('.mobile-nav');
+// let menuOpen = false;
+// menuBtn.addEventListener('click', () =>{
+//     if(!menuOpen){
+//         menuBtn.classList.add('open');
+//         menuOpen = true;
+//     }
+//     else{
+//         menuBtn.classList.remove('open');
+//         menuOpen = false;
+//     }
+
+  
+// });
