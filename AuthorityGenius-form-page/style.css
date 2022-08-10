@@ -39,9 +39,9 @@
 }
 
 .wrapperDiv{
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
   /* padding: 40px 100px; */
   z-index: 1;
@@ -171,6 +171,15 @@
   display: flex;
   justify-content: center;
   align-items: top;
+}
+
+/* .Root-sc-__sc-1esu8nk-2.dYVBuy{
+  position: relative;
+  top: 1200px;
+} */
+
+.brUNyi{
+  min-height: auto;
 }
 
 .footer{
