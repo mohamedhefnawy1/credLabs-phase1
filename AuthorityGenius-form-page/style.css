@@ -328,13 +328,14 @@
   }
   
   .mobile-nav.is-active {
-    left: 60%;
+    width: 50%;
+    left: 50%;
     min-height: 100vh;
   }
   
   .mobile-nav a {
     display:block;
-    margin: 0 25px 16px;
+    margin: 0 auto 16px;
     width: 100%;
     max-width:200px;
     text-align: center;
@@ -353,4 +354,32 @@
   .form{
     height: auto;
   }
+}
+
+@media screen and (max-width: 460px) {
+  .mobile-nav.is-active {
+    width: 50%;
+    left: 50%;
+    min-height: 100vh;
+  }
+  
+  .mobile-nav a {
+    display:block;
+    margin: 0 auto 16px;
+    width: auto;
+    max-width:140px;
+    text-align: center;
+    padding: 12px 16px;
+  
+    color: rgb(34, 229, 255);
+    text-decoration: none;
+    background-color: rgba(150, 150, 150, 0.479);
+
+    font-size: 12px;
+  }
+  
+  .mobile-nav a:hover{
+    background-color:#0063747a;
+  } 
+
 }

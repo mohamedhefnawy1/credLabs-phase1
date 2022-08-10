@@ -1952,10 +1952,6 @@ background-color: #00b0cf23;
     transition: 0.4s;
     overflow-y: hidden;
   }
-  
-  .mobile-nav{
-    width: 50%;
-  }
 
   .mobile-nav.is-active {
     width: 50%;
