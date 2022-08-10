@@ -28,6 +28,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .navbar{
@@ -1805,6 +1806,10 @@ background-color: #00b0cf23;
     padding: 30px 0px;
   }
 
+  #h2-title{
+    font-size:35px;
+  }
+
   .faq-page{
     font-size: 13px;
   }
@@ -1930,7 +1935,11 @@ background-color: #00b0cf23;
   }
   
   
-  
+  .linkHolder{
+    display: inline;
+    justify-content: center;
+  }
+
   .mobile-nav{
     display: block;
     position: fixed;
@@ -1946,7 +1955,7 @@ background-color: #00b0cf23;
   }
   
   .mobile-nav.is-active {
-    left: 60%;
+    left: 50%;
     min-height: 100vh;
   }
   
@@ -1976,15 +1985,22 @@ background-color: #00b0cf23;
   #infoHolder{
     /* width: auto; */
     overflow: visible;
-    padding: 40px;
+    padding: 40px 0px;
   }
 
   #infoHead{
     font-size: 30px;
   }
 
+  #h2-infoHolder{
+    padding: 20px 0px;
+  }
+
+  
+
   #h2-title{
-    font-size: 34px;
+    font-size: 24px;
+    text-align: center;
   }
 
   .line1{
@@ -1994,8 +2010,12 @@ background-color: #00b0cf23;
     left: 15px; */
   }
 
+  #h3-infoHolder{
+    padding: 20px 0px;
+  }
+
   #h3-title{
-    font-size: 34px;
+    font-size: 24px;
   }
 
   #h2-infoHead1{
@@ -2017,5 +2037,4 @@ background-color: #00b0cf23;
   .carousel-txt{
     position: relative;
   }
-
 }
