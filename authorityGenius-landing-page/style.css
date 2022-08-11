@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif, 'Raleway';
 }
 
 .main_container{
@@ -715,9 +715,100 @@ ol{
   max-width: 800px;
 }
 
-.testemonial{
+/* .testemonial{
   visibility: hidden;
+} */
+
+/* .testemonial-container{
+  grid-row-start: 5;
+  flex-direction: column;
+} */
+
+
+
+#testemonials{
+  padding: 5rem 0;
 }
+
+.testemonial-container{
+  grid-row-start: 7;
+  display: column;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+  /* flex-direction: column; */
+}
+
+.testemonials-top, 
+.testemonial-container{
+  padding: 0 1rem;
+}
+
+.testemonials_top{
+  text-align: center;
+  /* position: relative;
+  top: 50px; */
+  padding-top: 320px;
+}
+
+.testemonials_top h1{
+  font-size: 2rem;
+  color: #071e55;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+  letter-spacing: 0.05rem;
+}
+
+.testemonials_top p{
+  color: #7c8595;
+  font-size: 1.1rem;
+}
+
+.testemonial_item img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 10px;
+  z-index: 99;
+}
+
+.testemonialItem_info{
+  background-color: #fff;
+  padding: 5.5rem 2rem 2rem 2rem;
+  margin-top: -4rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 10px;
+}
+
+.testemonial_item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.testemonialItem_info p{
+  color: #7c8595;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.testemonialItem_info h2{
+  color: #1e90ff;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.testimonialItem_rating{
+  text-align: center;
+  color: #fdcc28;
+}
+
 
 .faq-header{
   grid-row: 7;
@@ -1341,14 +1432,14 @@ img{
   /* padding-top: 50px; */
 }
 
-.testemonial{
+/* .testemonial{
     grid-row-start: 5;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     top: 100px;
-}
+} */
 
 #joinButton{
   background-color:rgb(0, 0, 0);
@@ -1506,6 +1597,90 @@ ol{
 } */
 
 
+#testemonials{
+  padding: 5rem 0;
+}
+
+.testemonial-container{
+  grid-row-start: 5;
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+
+}
+
+.testemonials_top, 
+.testemonial-container{
+  padding: 0 1rem;
+}
+
+.testemonials_top{
+  text-align: center;
+  /* position: relative;
+  top: 50px; */
+  /* padding-top: 320px; */
+}
+
+.testemonials_top h1{
+  font-size: 2rem;
+  color: #071e55;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+  letter-spacing: 0.05rem;
+}
+
+.testemonials_top p{
+  color: #7c8595;
+  font-size: 1.1rem;
+}
+
+.testemonial_item img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 10px;
+  z-index: 99;
+}
+
+.testemonialItem_info{
+  background-color: #fff;
+  padding: 5.5rem 2rem 2rem 2rem;
+  margin-top: -4rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 10px;
+}
+
+.testemonial_item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.testemonialItem_info p{
+  color: #7c8595;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.testemonialItem_info h2{
+  color: #1e90ff;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.testimonialItem_rating{
+  text-align: center;
+  color: #fdcc28;
+}
+
+
 .FAQsection{
   grid-row-start: 6;
   display: flex;
@@ -1524,6 +1699,7 @@ ol{
   /* left: 60px; */
   display: flex;
   justify-content: center;
+  /* padding-top: 250px; */
 }
  
 .faq-heading{
