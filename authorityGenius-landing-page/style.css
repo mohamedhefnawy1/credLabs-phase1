@@ -14,7 +14,7 @@
   flex-direction: column;
 
   display: grid;
-  grid-template-rows:100px 800px auto 100px 600px;
+  grid-template-rows:100px 800px auto 100px auto;
 
   gap: 3px;
   /* padding: 10px; */
@@ -37,7 +37,9 @@
 
 .navbar > a{
   text-decoration: none;
-  color: #222222;
+  color: #000000;
+  font-family: 'Poppins', Raleway;
+  visibility: hidden;
 }
 
 #navButton{
@@ -301,9 +303,9 @@
 }
 
 #h2-infoHead1{
-  width: 200px;
+  /* width: 200px; */
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
   font-size: x-large;
   font-weight: bold;
@@ -313,8 +315,8 @@
 }
 
 .line1{
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   /* position: relative;
   left: 15px; */
 }
@@ -327,7 +329,7 @@
   font-weight: bold;
   /* padding: 40px; */
   box-sizing: border-box;
-  text-align: left;
+  text-align: center;
   color: #616161;
 }
 
@@ -335,7 +337,8 @@
   /* background-color: #000000; */
   margin-left: 10px;
   width:fit-content;
-  height: 34.28px;
+  /* height: 34.28px; */
+  height: 28px;
   overflow: hidden;
   margin-bottom: -10px;
   min-width: 200px;
@@ -348,7 +351,7 @@
   font-weight: bold;
   position: relative;
   top: 0;
-  animation: slide 24s steps(8) infinite;
+  animation: mobileSlide 24s steps(8) infinite;
   /* margin-left: 15px; */
   
 }
@@ -371,6 +374,13 @@
   100%{
     /* top: -232px; */
     top: -274px;
+  }
+}
+
+@keyframes mobileSlide {
+  100%{
+    /* top: -232px; */
+    top: -224px;
   }
 }
 
@@ -490,7 +500,7 @@
   justify-content: left;
   position: relative;
   left: 10px;
-  z-index: 1000;
+  z-index: 80;
 }
 
 .publisherInfoHolder{
@@ -569,8 +579,9 @@ ol{
 
 #dynamic-text2{
   /* background-color: #000000; */
-  margin-left: 10px;
-  height: 34.28px;
+  /* margin-left: 10px; */
+  /* height: 34.28px; */
+  height: 28px;
   overflow: hidden;
   margin-bottom: -10px;
   /* min-width: 200px; */
@@ -584,13 +595,20 @@ ol{
   font-weight: bold;
   position: relative;
   top: 0;
-  animation: slide 24s steps(8) infinite;
+  animation: mobileSlide2 24s steps(8) infinite;
 }
 
-@keyframes slide {
+@keyframes slide2 {
   100%{
     /* top: -223px; */
     top: -274px;
+  }
+}
+
+@keyframes mobileSlide2 {
+  100%{
+    /* top: -223px; */
+    top: -222px;
   }
 }
 
@@ -633,6 +651,7 @@ ol{
 .dynamictxtwrapper{
   display: flex;
   justify-content: center;
+  height: 28px;
 }
 
 .expertInfoHolder{
@@ -746,14 +765,14 @@ ol{
 
 .testemonials-top, 
 .testemonial-container{
-  padding: 0 1rem;
+  padding: 0 3rem;
 }
 
 .testemonials_top{
   text-align: center;
   /* position: relative;
   top: 50px; */
-  padding-top: 320px;
+  /* padding-top: 320px; */
 }
 
 .testemonials_top h1{
@@ -776,7 +795,7 @@ ol{
   border-radius: 50%;
   border: 10px solid #fff;
   box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 10px;
-  z-index: 99;
+  z-index: 80;
 }
 
 .testemonialItem_info{
@@ -987,6 +1006,7 @@ img{
 
 #expertDatabase:hover{
   text-decoration: underline;
+  cursor: pointer;
   color: var(--clr-primary-dark);
 }
 
@@ -995,19 +1015,19 @@ img{
   font-size: 16px;
   position: absolute;
   background-color: #ffffff;
-  padding: 0.5rem;
+  padding: 0.5rem 10px;
   border-radius: 7px;
   box-shadow: 0px 0px 10px rgb(101, 214, 209);
-  top: 50px;
-  left: 115px;
+  top: 45px;
   clip-path: circle(0rem at center);
   overflow: hidden;
-  transition: 150ms all ease-in;
+  margin-left: -2px;
+  margin-top: -2px;
+  transition: 250ms all ease-in-out;
   }
 
 #expertDatabase:hover::before{
   clip-path: circle(20rem at center);
-  top: 34%
 }
 #aboutUs{
   display:inline;
@@ -1036,6 +1056,13 @@ img{
   min-width: 150px;
   height: 50px;
   overflow: hidden;
+  visibility: visible;
+}
+
+.navbar > a{
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Poppins', Raleway;
   visibility: visible;
 }
 
@@ -1231,6 +1258,7 @@ img{
   text-align: left;
   color: #616161;
   min-width:200px;
+  max-width: 500px;
 }
 
 #h2-infoHead2{
@@ -1241,7 +1269,7 @@ img{
   font-weight: bold;
   /* padding: 40px; */
   box-sizing: border-box;
-  text-align: left;
+  text-align: center;
   color: #616161;
   z-index: 100;
   min-width: 300px;
@@ -1317,7 +1345,7 @@ img{
   justify-content: left;
   position: relative;
   left: 10px;
-  z-index: 1000;
+  /* z-index: 80; */
 }
 
 #publisherInfo{
@@ -1354,7 +1382,7 @@ img{
 #dynamic-text2{
   /* background-color: #000000; */
   margin-left: 10px;
-  height: 34.28px;
+  height: 28px;
   overflow: hidden;
   margin-bottom: -10px;
   /* min-width: 200px; */
@@ -1368,7 +1396,7 @@ img{
   font-weight: bold;
   position: relative;
   top: 0;
-  animation: slide 24s steps(8) infinite;
+  animation: slide2 24s steps(8) infinite;
 }
 
 @keyframes slide {
@@ -1377,6 +1405,16 @@ img{
     top: -274px;
   }
 }
+
+@keyframes slide2 {
+  100%{
+    /* top: -223px; */
+    top: -222px;
+  }
+}
+
+
+
 
 #dynamic-text2 li::after{
   content:"";
@@ -1603,7 +1641,7 @@ ol{
 
 
 #testemonials{
-  padding: 5rem 0;
+  padding: 5rem 2rem;
 }
 
 .testemonial-container{
@@ -1843,7 +1881,7 @@ background-color: #00b0cf23;
     /* z-index: 100; */
   }
   .main_container{
-    grid-template-rows: 100px 800px auto auto 800px auto;
+    grid-template-rows: 100px 800px auto auto auto auto;
   }
 
   #title{
@@ -1990,6 +2028,15 @@ background-color: #00b0cf23;
 
   #h2-title{
     font-size:35px;
+  }
+
+  #dynamic-text{
+    position: relative;
+    left: 50px;
+  }
+
+  .testemonial-container{
+    padding: 0 3rem;
   }
 
   .faq-page{
@@ -2211,13 +2258,30 @@ background-color: #00b0cf23;
 
   #dynamic-text{
     position: relative;
-    /* left: -15px; */
+    left: 50px;
   }
 
   #bodyHolder{
-    padding: 90px 30px;
+    padding: 20px;
+    padding-top: 90px;
   }
   .carousel-txt{
     position: relative;
+  }
+
+  .testemonial-container{
+    padding: 0 3rem;
+  }
+
+  .testemonials-top{
+    padding-top: 20px;
+  }
+
+  .faq-container{
+    padding-top: 0px;
+  }
+
+  .faq-header{
+    padding-top: 50px;
   }
 }
