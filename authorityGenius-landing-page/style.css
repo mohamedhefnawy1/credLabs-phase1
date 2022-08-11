@@ -37,7 +37,9 @@
 
 .navbar > a{
   text-decoration: none;
-  color: #222222;
+  color: #000000;
+  font-family: 'Poppins', Raleway;
+  visibility: hidden;
 }
 
 #navButton{
@@ -498,7 +500,7 @@
   justify-content: left;
   position: relative;
   left: 10px;
-  z-index: 1000;
+  z-index: 80;
 }
 
 .publisherInfoHolder{
@@ -763,7 +765,7 @@ ol{
 
 .testemonials-top, 
 .testemonial-container{
-  padding: 0 1rem;
+  padding: 0 3rem;
 }
 
 .testemonials_top{
@@ -793,7 +795,7 @@ ol{
   border-radius: 50%;
   border: 10px solid #fff;
   box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 10px;
-  z-index: 99;
+  z-index: 80;
 }
 
 .testemonialItem_info{
@@ -1054,6 +1056,13 @@ img{
   min-width: 150px;
   height: 50px;
   overflow: hidden;
+  visibility: visible;
+}
+
+.navbar > a{
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Poppins', Raleway;
   visibility: visible;
 }
 
@@ -1336,7 +1345,7 @@ img{
   justify-content: left;
   position: relative;
   left: 10px;
-  z-index: 1000;
+  /* z-index: 80; */
 }
 
 #publisherInfo{
@@ -1632,7 +1641,7 @@ ol{
 
 
 #testemonials{
-  padding: 5rem 100px;
+  padding: 5rem 2rem;
 }
 
 .testemonial-container{
@@ -2026,6 +2035,10 @@ background-color: #00b0cf23;
     left: 50px;
   }
 
+  .testemonial-container{
+    padding: 0 3rem;
+  }
+
   .faq-page{
     font-size: 13px;
   }
@@ -2254,6 +2267,10 @@ background-color: #00b0cf23;
   }
   .carousel-txt{
     position: relative;
+  }
+
+  .testemonial-container{
+    padding: 0 3rem;
   }
 
   .testemonials-top{
