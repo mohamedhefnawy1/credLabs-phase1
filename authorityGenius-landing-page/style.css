@@ -35,11 +35,16 @@
   margin-top: 20px;
 }
 
+/* 
 .navbar > a{
   text-decoration: none;
   color: #000000;
   font-family: 'Poppins', Raleway;
   visibility: hidden;
+} */
+
+.footerExpertDatabase{
+  visibility: visible;
 }
 
 #navButton{
@@ -759,17 +764,6 @@ ol{
   max-width: 800px;
 }
 
-/* .testemonial{
-  visibility: hidden;
-} */
-
-/* .testemonial-container{
-  grid-row-start: 5;
-  flex-direction: column;
-} */
-
-
-
 #testemonials{
   padding: 5rem 0;
 }
@@ -780,7 +774,6 @@ ol{
   gap: 2rem;
   width: 100%;
   margin-top: 2rem;
-  /* flex-direction: column; */
 }
 
 .testemonials-top, 
@@ -790,9 +783,6 @@ ol{
 
 .testemonials_top{
   text-align: center;
-  /* position: relative;
-  top: 50px; */
-  /* padding-top: 320px; */
 }
 
 .testemonials_top h1{
@@ -881,7 +871,6 @@ margin: auto;
 }
 /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
-  /* background-color: #eee; */
   color: #444;
   cursor: pointer;
   padding: 30px 20px;
@@ -933,7 +922,6 @@ line-height: 30px;
   height: 100px;
   width: 100%;
   background-color: rgba(207, 207, 207, 0.295);
-  /* position: absolute; */
   bottom: 0;
   left: 0;
   display: flex;
@@ -1298,7 +1286,7 @@ img{
 
  #dynamic-text{
   margin-left: 10px;
-  height: 34.28px;
+  height: 28px;
   overflow: hidden;
   margin-bottom: -10px;
 } */
@@ -1980,6 +1968,15 @@ background-color: #00b0cf23;
   .faq-header{
     padding-top: 100px;
     padding-bottom: 20px;
+  }
+
+  a{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Poppins', Raleway;
+    visibility: visible;
+    font-size: 18px;
+    padding: 10px;
   }
 
 }

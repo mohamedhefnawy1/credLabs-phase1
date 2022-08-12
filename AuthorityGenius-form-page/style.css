@@ -68,6 +68,7 @@
   box-sizing: border-box;
   text-decoration: none;
   color: #000000;
+  margin-left: 60px;
 }
 
 .navbar{
@@ -243,6 +244,7 @@
     left: 0;
     top:0; */
     font-size: 25px;
+    margin-left: 0px;
   }
 
   .navbar{
