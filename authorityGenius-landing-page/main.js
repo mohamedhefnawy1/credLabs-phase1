@@ -18,11 +18,19 @@ for (i = 0; i < faq.length; i++) {
 
 
 const menuBtn = document.querySelector(".hamburger");
+const mobileMenuBtn = document.querySelector(".mobile-nav .hamburger");
 const mobileMenu = document.querySelector('.mobile-nav');
 
 menuBtn.addEventListener('click', function() {
     menuBtn.classList.toggle('is-active')
     mobileMenu.classList.toggle('is-active')
+    mobileMenuBtn.classList.toggle('is-active')
+});
+
+mobileMenuBtn.addEventListener('click', function() {
+    menuBtn.classList.toggle('is-active')
+    mobileMenu.classList.toggle('is-active')
+    mobileMenuBtn.classList.toggle('is-active')
 });
 
 //animation for burger button
