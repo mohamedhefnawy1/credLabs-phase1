@@ -5,7 +5,8 @@ const creatorButton = document.getElementById("getStartedButton");        // cre
             // const name = prompt("Enter name: ");
             // console.log(name);
             // location.href = "http://127.0.0.1:5500/CREDLABS-creators-page/index.html";
-            location.href = "https://effulgent-croquembouche-26c9f4.netlify.app/";
+            location.href = "https://authoritygenius.netlify.app/";
+            
             
 
         });
@@ -17,7 +18,7 @@ const navButton = document.getElementById("navButton");        // create a const
             // const name = prompt("Enter name: ");
             // console.log(name);
             // location.href = "http://127.0.0.1:5500/CREDLABS-experts-page/index.html";  // need the link for the expert page
-            location.href = "https://effulgent-croquembouche-26c9f4.netlify.app/";
+            location.href = "https://authoritygenius.netlify.app/";
         });
 
 const joinButton = document.getElementById("joinButton");        // create a constant in js file that references the button we made above
@@ -27,7 +28,7 @@ const joinButton = document.getElementById("joinButton");        // create a con
         // const name = prompt("Enter name: ");
         // console.log(name);
         // location.href = "http://127.0.0.1:5500/CREDLABS-experts-page/index.html";  // need the link for the expert page
-        location.href = "https://effulgent-croquembouche-26c9f4.netlify.app/";
+        location.href = "https://authoritygenius.netlify.app/";
     });
 
 
