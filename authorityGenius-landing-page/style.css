@@ -371,6 +371,7 @@
 
 #dynamic-text li{
   list-style: none;
+  height: 28px;
   color: #19bedb;
   font-size: x-large;
   font-weight: bold;
@@ -614,6 +615,7 @@ ol{
 
 #dynamic-text2 li{
   width:52px;
+  height: 28px;
   list-style: none;
   color: #19bedb;
   font-size: x-large;
@@ -1410,6 +1412,7 @@ img{
 
 #dynamic-text2 li{
   width:52px;
+  height: 28px;
   list-style: none;
   color: #19bedb;
   font-size: x-large;
