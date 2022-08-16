@@ -1,7 +1,0 @@
-#redirecting from www.authoritygenius.netlify.app to www.authoritygenius.com/signup
-
-authoritygenius.netlify.app/* authoritygenius.com/:splat 301!
-
-
-
-
