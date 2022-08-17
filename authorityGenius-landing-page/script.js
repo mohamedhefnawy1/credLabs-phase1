@@ -6,7 +6,7 @@ const creatorButton = document.getElementById("getStartedButton");        // cre
             // console.log(name);
             // location.href = "http://127.0.0.1:5500/CREDLABS-creators-page/index.html";
             // location.href = "https://authoritygenius.netlify.app/";
-            location.href = "../AuthorityGenius-form-page/signup";
+            location.href = "../AuthorityGenius-form-page/signup.html";
             
             
 
