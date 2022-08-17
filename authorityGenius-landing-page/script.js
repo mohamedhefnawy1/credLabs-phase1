@@ -6,7 +6,7 @@ const creatorButton = document.getElementById("getStartedButton");        // cre
             // console.log(name);
             // location.href = "http://127.0.0.1:5500/CREDLABS-creators-page/index.html";
             // location.href = "https://authoritygenius.netlify.app/";
-            location.href = "signup.html";
+            location.href = "signup";
             
             
 
@@ -19,7 +19,7 @@ const navButton = document.getElementById("navButton");        // create a const
             // const name = prompt("Enter name: ");
             // console.log(name);
             // location.href = "http://127.0.0.1:5500/CREDLABS-experts-page/index.html";  // need the link for the expert page
-            location.href = "signup.html";
+            location.href = "signup";
         });
 
 const joinButton = document.getElementById("joinButton");        // create a constant in js file that references the button we made above
@@ -29,7 +29,7 @@ const joinButton = document.getElementById("joinButton");        // create a con
         // const name = prompt("Enter name: ");
         // console.log(name);
         // location.href = "http://127.0.0.1:5500/CREDLABS-experts-page/index.html";  // need the link for the expert page
-        location.href = "signup.html";
+        location.href = "signup";
     });
 
 
