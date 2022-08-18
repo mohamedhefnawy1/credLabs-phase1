@@ -179,8 +179,8 @@
   top: 1200px;
 } */
 
-.brUNyi{
-  min-height: auto;
+.brUNyi {
+  min-height: 0px !important;
 }
 
 .footer{
