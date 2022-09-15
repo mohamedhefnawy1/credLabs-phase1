@@ -1075,6 +1075,7 @@ img{
   color: #000000;
   font-family: 'Poppins', Raleway;
   visibility: visible;
+  font-size: 18px;
 }
 
 #navButton:hover {
@@ -2022,7 +2023,6 @@ background-color: #00b0cf23;
 
   .hamburger{
     position: relative;
-    /* display: block; */
     width: 35px;
     cursor: pointer;
   
